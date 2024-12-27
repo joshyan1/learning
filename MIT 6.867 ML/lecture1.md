@@ -19,9 +19,9 @@ The key to finding classifiers that generalize well is to constrain the set of p
 
 ### Linear classifiers through origin
 For now, we fix our function class to **linear classifiers**. Formally, we consider functions of the form
-$$ 
+```math
 f(x; \theta) = sign(\theta_1x_1 + \dots + \theta_d x_d ) = sign(\theta^T x)
-$$
+```
 where $\theta = [\theta_1, \dots, \theta_d]^T$ is a column vector of real valued parameters. These functions are parameterized by $\theta \in \mathbb{R}^d$, meaning that different values of this *parameter* could yield different *outputs* for some inputs $x$
 
 Thinking geometrically, $\theta^T x = 0$ is a *decision boundary*, and our function predicts $1$, ($-1$ respectively), when $\theta^T x > 0$, ($\theta^T x < 0$).
